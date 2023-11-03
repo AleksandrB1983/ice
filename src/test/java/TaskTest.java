@@ -15,14 +15,16 @@ class TaskTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void testSimpleTaskNotMatches() {
         SimpleTask simpleTask = new SimpleTask(5, "Позвонить родителям");
         boolean expected = false;
         boolean actual = simpleTask.matches("Написать");
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testEpicMatches() {
 
@@ -35,6 +37,7 @@ class TaskTest {
 
         Assertions.assertTrue(actual);
     }
+
     @Test
     public void testEpicNotMatches() {
 
@@ -47,6 +50,7 @@ class TaskTest {
 
         Assertions.assertFalse(actual);
     }
+
     @Test
     public void testMeetingMatches() {
 
@@ -63,6 +67,7 @@ class TaskTest {
 
         Assertions.assertTrue(actual);
     }
+
     @Test
     public void testSecondMeetingMatches() {
 
@@ -79,6 +84,7 @@ class TaskTest {
 
         Assertions.assertTrue(actual);
     }
+
     @Test
     public void testMeetingNotMatches() {
 
